@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blackyak.Core.Configuration;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Blackyak
         public Form1()
         {
             InitializeComponent();
+
+            MessageBox.Show(AppSetting.UBConfig.AccessKey);
         }
     }
 }
